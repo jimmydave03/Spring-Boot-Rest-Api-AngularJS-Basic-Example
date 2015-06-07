@@ -1,0 +1,7 @@
+/home/james/workspace/spring-boot-crud-hibernate-rest-example/Spring-boot-crud-angularjs-example/src/main/java/com/app/Application.java
+/home/james/workspace/spring-boot-crud-hibernate-rest-example/Spring-boot-crud-angularjs-example/src/main/java/com/app/config/SimpleCORSFilter.java
+/home/james/workspace/spring-boot-crud-hibernate-rest-example/Spring-boot-crud-angularjs-example/src/main/java/com/app/controller/UserController.java
+/home/james/workspace/spring-boot-crud-hibernate-rest-example/Spring-boot-crud-angularjs-example/src/main/java/com/app/service/UserService.java
+/home/james/workspace/spring-boot-crud-hibernate-rest-example/Spring-boot-crud-angularjs-example/src/main/java/com/app/entity/User.java
+/home/james/workspace/spring-boot-crud-hibernate-rest-example/Spring-boot-crud-angularjs-example/src/main/java/com/app/repository/UserRepository.java
+/home/james/workspace/spring-boot-crud-hibernate-rest-example/Spring-boot-crud-angularjs-example/src/main/java/com/app/service/UserServiceImpl.java

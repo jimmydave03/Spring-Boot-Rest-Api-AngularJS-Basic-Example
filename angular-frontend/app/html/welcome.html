@@ -1,0 +1,66 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div>
+                <legend>User Details</legend>
+                <table>
+                    <tr>
+                        <td><label>First Name</td>
+                        <td>
+                            <input type="text"  maxlength="29" ng-model="user.firstName"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Last Name</td>
+                        <td>
+                            <input type="text"  maxlength="29" ng-model="user.lastName"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label id="emailL" for="email">Email</td>
+                        <td>
+                            <input type="email" maxlength="150" ng-model="user.email"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Mobile Number</label></td>
+                        <td>
+                            <input type="text" maxlength="10" value="" ng-model="user.mobileNumber"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" name="submit" value="submit" ng-click="save();"/>
+                            <input type="submit" name="clear" value="clear" ng-click="user = null"/>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>email</th>
+                            <th>Moblie Number</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="user in users">
+                            <td>{{$index + 1}}</td>
+                            <td>{{user.firstName}}</td>
+                            <td>{{user.lastName}}</td>
+                            <td>{{user.email}}</td>
+                            <td>{{user.mobileNumber}}</td>
+                            <td><a href="#" ng-click="updateUser(user);">Update</a>
+                            <td><a href="#" confirmed-click="deleteUser(user);" ng-confirm-click=" Do you want to delete this user?">Delete</a></td>
+                        </tr>
+                    </tbody>
+                </table>    
+            </div>
+        </div>
+    </div>
+</div>
